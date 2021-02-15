@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        The title is what is shown on Google search result and on your chrome tab
+    -->
+    <title>This is a page about chickens</title>
+
+<body>
+    <h1>Heading 1</h1>
+    <!--
+        <hr> = horizontal rule.
+        <br> = linebreak
+        Creates a line across the screen, like a 
+        "divider"
+    -->
+    <hr>
+    <h2>An example poem</h2>
+    <p>
+        O were my love yon Lilac fair,<br>
+        Wi' <sup><a href="qsdqsd.com">[test]</a></sup>purple blossoms to the Spring,<br>
+        And I, a bird to shelter there,<br>
+        When wearied on my little wing!<br>
+        How I wad mourn when it was torn<br>
+        By Autumn wild, and Winter rude!<br>
+        But I wad sing on wanton wing,<br>
+
+    </p>
+    Wi' <sup><a href="https://google.com">[test]</a></sup>purp
+    <h2>Heading 2</h2>
+    <!--
+        Image from local file vs Image from the Internet
+        RQ: No closing tag! just <img src="...">    
+    -->
+    <img src="jonbatiste.jpg">
+    <img src="https://hrcdn.net/community-frontend/assets/brand/logo-new-white-green-a5cb16e0ae.svg">
+
+    <!--
+        Hyperlink to a local html file vs to a webite on the Internet
+    -->
+    <a href="http://www.google.com"> THIS IS A LINK TO GOOGLE (HTTP://..)</a>
+
+    <a href="aboutme.html">THIS IS A LINK TO A LOCAL FILE</a>
+
+    <p>Paragraph 1. Blablabbla</p>
+
+    <!--
+        ul = Unordered List
+        ol = Ordered List
+        All descendants of ul and ol MUST BE <li> ..content... </li>
+        content can be anything else. (i.e another nested list)
+    -->
+    <ul>
+        <li>Neil Armstrong</li>
+        <ol>
+            <li><a href="https://www.google.com">
+                    another list<a></li>
+            <li>another list</li>
+            <li>another listé</li>
+            <li>another list</li>
+            <li>another list</li>
+        </ol>
+        <li>Silkie</li>
+        <li>Silkie2</li>
+        <li>Silkie2</li>
+        <li>Solkie Egg</li>
+        <li>Easter<sup><a href="test.com">test</a></sup>Eggs</li>
+    </ul>
+    <!--
+        <sup>...</sup> = superscript the element(elevated/power)
+        <sub>...</sub> = Subscript (under)
+    -->
+    <p>
+        Wi' <sup><a href="qsdqsd.com">[test]</a></sup>purp
+        example superscript <sup>[1]</sup> and this ossne<sup><a href="https://google.com">[2]</a></sup>
+        example subscript : Water is H<sub>2</sub>O and one with link
+        Water is H<sub><a href="gqsd.com">2</a></sub>
+    </p>
+    <!-- HTML ENTITIES
+    These are used to write special characters: starts with &, ends with ;   
+-->
+    <h2>less than : &lt;</h2>
+    <h2>greater than : &gt;</h2>
+    <h2> AND symbol : &amp;</h2>
+    <h2>Spades symbol : &spades;</h2>
+    <h2>Hearts symbol : &hearts;</h2>
+    <h2>&#9731;Snowman Productions<sup>&reg;</sup></h2>
+
+    <!--  SEMANTIC MARKUPS 
+    They are just like "div", but easier to understand/more inituitive
+    They dont do anything extra/special than div
+    Reminder: div is for defining a block of elements(a generic container)
+    Examples: <main>, <section>, <nav>, <article>, <aside>, <header>,
+        <footer>, <time>, <figure>
+-->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li><a href="aboutme.html">About me</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>example use of semantic footer</p>
+    </footer>
+
+
+</body>
+</head>
+
+</html>
