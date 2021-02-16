@@ -1,0 +1,49 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;  /*So the new block stays side by side instead of entering a new line*/
+}
+
+#middle{
+    background-color: #81b29a;
+}
+
+/*The element is positioned relative to where it would be*/
+#relative #middle{
+    position:relative;
+    top: 50px;
+    left: 50px;
+}
+
+/*In aboslute, the element will not take up any space
+ In this case the middle div would overlap the right
+ div.
+ If any position is specified, it will be positioned
+ relative to it's closet ancestor. (in this case
+ the section "absolute"), or if none that relative to
+ "body"*/
+
+#absolute{
+    position:relative;
+}
+
+#absolute #middle{
+    position: absolute;
+    top: 50px;
+}
+
+/*fixed is like absolute (doesnt take up space, positioned relative
+to the containing block (the body)
+Always stays at the same position, even if we scroll down
+Application: navigation bar, chat bot etc*/
+#fixed #middle{
+    position:fixed;
+    top:400px;
+    bottom:400px;
+}
+
+
+/*Sticky is also cool. cf documentation*/
