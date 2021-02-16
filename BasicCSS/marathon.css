@@ -1,0 +1,86 @@
+/*Targets all buttons*/
+button{
+    background-color: blue;
+    color:white;
+}
+
+/*Targets a specific button(as a unique ID)*/
+#oldpeople{
+    background-color: burlywood;
+    color:black;
+}
+
+/*Targets a class/tag (a group of items that will share the same
+design*/
+.ingredients{
+    color:white;
+    background-color: red;
+}
+.number{
+    color:white;
+    background-color: rosybrown;
+}
+
+/*RQ: "#" for ID and "." for a class!!!! */
+
+/*Targets all <a> tags inside a <ol>
+Descendant selectors => 
+basically x y{ ...} will target all y inside x (can be anything:button,anchor,class,id..etc)
+*/
+ol a{
+    color:rosybrown;
+}
+
+/*Adjacent selectors x + y{...} => all y that comes
+after x*/
+h3 + button{
+    color:sienna;
+    background-color: white;
+}
+
+/*Direct child selector: x>y{...} select the direct descendant y of x*/
+/*The following selects <a> that are a direct descendant of <nav>*/
+nav>a{
+    color:springgreen;
+}
+
+/*Select specific inputs*/
+input[type="email"]{
+    color:greenyellow;
+}
+
+/*Other examples
+section[class="classname"] => section with class "classname"
+section.post => section with class name "post"
+a[href*="google"] => <a> tags that contains "google"*/
+
+/*Pseudo class => Preceeded by a ":" */
+
+/*Change button when cursor is "hovering" over button*/
+button:hover{
+    background-color:indigo;
+}
+
+/*When the button is clicked "active"*/
+.books button:active{
+    background-color: lawngreen;
+    text-decoration:underline;
+}
+
+/*Pseudo element => "::"*/
+
+/*1st letter of all h2*/
+h2::first-letter{
+    font-size:50px;
+}
+
+/*1st line of every <p>*/
+p::first-line{
+    font-size:50px;
+    background-color: lightgoldenrodyellow;
+}
+
+/*When <p> is selected/highlighted*/
+p::selection{
+    background-color:yellow;
+}

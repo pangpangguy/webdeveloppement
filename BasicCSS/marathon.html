@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration Form</title>
+    <link rel="stylesheet" href="marathon.css">
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form action="/racereg">
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" required>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" required>
+        </div>
+        <p> Select a Race:</p>
+        <div>
+            <input type="radio" id="funrun" name="race" value="funrun">
+            <label for="funrun">Fun Run 5k</label>
+        </div>
+        <div>
+            <input type="radio" id="half" name="race" value="half">
+            <label for="half">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" id="full" name="race" value="full">
+            <label for="full">Full Marathon</label>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+        </div>
+
+        <label for="age">Select Age Group</label>
+        <select name="age" id="age">
+            <option value="under_18">under 18</option>
+            <option value="19_49">19-49</option>
+            <option value="above_50">above 50</option>
+        </select>
+
+        <button>Register!</button>
+        <button>Register for Kids</button>
+        <button id="oldpeople">Register for Old people</button>
+    </form>
+
+    <h2>Some random section with text</h2>
+    <p>
+        Lorem ipsum dolor <span class="ingredients">meat</span>sit amet, consectetur adipiscing elit. Quisque nisl eros,
+        pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.
+        Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet <span class="number">five</span>ex,
+        in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
+        per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut
+        vestibulum. Maecenas ipsum lacus, lacinia quis <span class="ingredients">basil</span>posuere ut, pulvinar vitae
+        dolor.
+        Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat
+        faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc.<span class="number">six</span>
+        Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis.
+        Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus,
+    </p>
+    <nav>
+        <a href="https://google.com">Link to Google</a>
+        <ol>
+            <li>something</li>
+            <li>something else</li>
+            <li>
+                <a href="https://facebook.com">Link to Facebook</a>
+        </ol>
+    </nav>
+    <h3>A h3 section</h3>
+    <button>Button after h3</button>
+
+    <h4>Books</h4>
+    <div class="books">
+        <button>Buy Books</button>
+    </div>
+
+</body>
+
+</html>

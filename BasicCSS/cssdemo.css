@@ -1,0 +1,40 @@
+h1{
+    text-align:center;
+    font-weight:normal;/*same as font-weight 400*/
+    text-decoration:underline;
+    letter-spacing: 15px;
+    font-size:40px;
+    font-family:Arial, Helvetica, sans-serif; /*First font is main,
+    second and third font are backups. We can also specify font families
+    such as the third option (sans-serif)where the machine would pick
+    any other font in that family. We can have as many as possible
+    Example families: fantasy, monospace,.....*/
+}
+
+/*We can also combine selectors by doing h1,h2{...}*/
+h2{
+    text-align: right;
+    width:50%;
+    font-weight:600;
+}
+
+p{
+    font-weight:bold; /*same as 700*/
+    line-height:2; /*Space between lines.*/
+}
+
+a{
+    text-decoration:none; /*If we do not want underline in hyperlink*/
+}
+
+/*for the line we can also specify color and style(double/wavy/..)*/
+
+h3{
+    text-decoration:orange line-through wavy;
+}
+
+button{
+    font-size:40px;
+}
+
+
