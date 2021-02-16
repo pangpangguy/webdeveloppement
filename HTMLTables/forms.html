@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+    <form> represents a document section containing iteractive controls
+        for submitting information.
+    "action" specifies where the form data is sent to
+    "method" specifies 
+    -->
+
+<body>
+    <h1>Forms of TacoBell</h1>
+    <form action="/tacos">
+        <!--Different types of input (cf doc for more)
+            "placeholder" text that appear in box without any entry-->
+        <p>
+            <input type="text" , placeholder="username">
+            <input type="password" , placeholder="password">
+        </p>
+        <p>
+            <input type="color">
+            <input type="number" , placeholder="number" , min="1" , max="10">
+        </p>
+        <!--each input must be associated with only 1 unique label-->
+        <label for="tacoName">Enter name of a Taco:</label>
+        <input id="tacoName" type="text" , placeholder="Name of Tacos">
+
+        <!--Buttons inside a <form>, the default behavoir would be to send/
+            submit that form
+            User can also just press enter-->
+        <button>Default Submit Button</button>
+        <button type="button">Button that does not submit</button>
+        <!-- We can also use <input> to create a button-->
+        <input type="submit" value="input submit button">
+    </form>
+    <!--Button outsode a form does nothing-->
+    <button>Button does nothing</button>
+
+    <h2>Create Your Twitter Account!</h2>
+    <form action="/twitter">
+        <!-- Name attribut:
+            "name" in <input> acts as a container for the user input (what the user
+            typed in)
+        -->
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" , placeholder="Username" , name="Usrn">
+        </p>
+        <p>
+            <label for="password">Enter a password</label>
+            <input id=password type="password" , placeholder="Password" , name="pswd">
+        </p>
+        <button>Create Your Account</button>
+    </form>
+
+    <h2>Reddit Search Query</h2>
+    <p>Search for something on reddit:</p>
+    <form action="https://reddit.com/search">
+        <!--Note that "name" here is "q"! cause reddit site uses this letter! -->
+        <input type="text" , placeholder="Search for something" , name="q">
+        <button>Search Reddit</button>
+        <!--Clicking on submit would automically take us to https://reddit.com/search?q=searchinput-->
+    </form>
+
+    <h2>Youtube Search Query</h2>
+    <p>Search for something on Youtube</p>
+    <form action="https://youtube.com/results">
+        <!--Youtube uses "results" instead of search, and for name it uses "search_query"
+            instead of "q"!!-->
+        <input type="text" , placeholder="Search for something" , name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+    <h1>Checkboxes</h1>
+    <p>Terms and Agreements</p>
+    <form action="/check">
+        <p>
+            <input type="checkbox" , name="agree_tos" , id="checkbox">
+            <label for="checkbox">I agree to the Terms and Agreements of the Service</label>
+        </p>
+        <p>
+            <input type="checkbox" , name="agree_tos_prechecked" , id="checkbox2" checked>
+            <label for="checkbox2">This checkbox is prechecked</label>
+        </p>
+        <button>Proceed</button>
+    </form>
+    <p>Shirt Sizes</p>
+    <form action="/radio">
+        <!--type radio => can only choose one among inputs of same name
+            "value" is the string that will be passed into "size", instead of "on"
+        for the checkbox-->
+        <p>
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="small">
+            <label for="m" ,>M:</label>
+            <input type="radio" name="size" id="m" value="medium">
+            <label for="l">L:</label>
+            <input type="radio" name="size" id="l" value="large">
+        <p>
+            <label for="agree_shirt_tos">I agree to send information about my Tshirt size:</label>
+            <input type="radio" name="agree_shirt_tos" id="agree_shirt_tos">
+            <button>Submit</button>
+        </p>
+        </p>
+    </form>
+    <h1>Select something!</h1>
+    <form action="/waifu">
+        <p>
+            <label for="waifu">Select your favourite Waifu</label>
+            <select name="waifu" id="waifu">
+                <option value="sakura">Sakura</option>
+                <option value="tsunade">Tsunade</option>
+                <!--selected keyword will make the option pre-selected-->
+                <option value="else" selected>Anyone else</option>
+            </select>
+            <button>Submit your Waifu</button>
+        </p>
+    </form>
+
+    <h1>Ranges and Request!</h1>
+    <form action="/flirt">
+        <p>
+            <label for="flirt">How is your Flirting skills?</label>
+            <input type="range" id="flirt" min="1" max="10" step="1" name="flirting_level">
+        </p>
+        <p>
+            <label for="info">Any other information?</label>
+            <br>
+            <textarea id="info" rows="10" cols="40" name="otherinfo"
+                placeholder="Anything else you want to specify?"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h1>Validations!</h1>
+    <form action="/validations">
+        <p>
+            <label for="required">Dont leave this blank!</label>
+            <input type="text" name="required" id="required" required>
+            <br>
+            <label for="length">Enter something between 5 and 10!</label>
+            <input type="text" name="length" id="length" minlength="5" , maxlength="10" required>
+
+            <!--Check for patterns (built-in validation for html forms)-->
+            <input type="url" , placeholder="url">
+            <button>Submit</button>
+
+        </p>
+    </form>
+
+
+</body>
+
+</html>

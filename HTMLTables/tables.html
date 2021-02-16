@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaviest Birds</title>
+</head>
+<h1>Table of the heaviest birds in the world</h1>
+
+<body>
+    <!--
+        <td> = data in the table
+        <tr> = table row
+        <th> = table header (bold by default)
+        <thead>, <tbody>, <tfoot> for markup
+        -->
+    <table>
+        <!--table header-->
+        <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Average mass</th>
+                <th>Maximum mass</th>
+                <th>Can fly?</th>
+            <tr>
+        </thead>
+
+        <tbody>
+            <!--table row 1-->
+            <tr>
+                <td>Ostrich</td>
+                <td>100kg</td>
+                <td>150kg</td>
+                <td>No</td>
+            </tr>
+
+            <!-- table row 2 and etc-->
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>120kg</td>
+                <td>40kg</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Turkey</td>
+                <td>5kg</td>
+                <td>Yes</td>
+                <td>10kg</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <!-- Table with header-->
+    <h2>Example 2: Table with Shared Header</h2>
+    <table>
+        <!--table header takes 2 rows-->
+        <thead>
+            <!--first row-->
+            <tr>
+                <!--Animals take up 2 rows
+                    similarly average mass takes up 2 columns-->
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Average mass</th>
+                <th rowspan="2 ">Can fly?</th>
+            </tr>
+
+            <!--second row-->
+            <tr>
+                <th>KG</th>
+                <th>LB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--table row 1-->
+            <tr>
+                <td>Ostrich</td>
+                <td>100kg</td>
+                <td>150kg</td>
+                <td>No</td>
+            </tr>
+
+            <!-- table row 2 and etc-->
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>120kg</td>
+                <td>40kg</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Turkey</td>
+                <td>5kg</td>
+                <td>Yes</td>
+                <td>10kg</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
