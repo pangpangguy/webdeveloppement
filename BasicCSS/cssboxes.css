@@ -1,0 +1,60 @@
+h1{
+   width:150px;
+   background-color: pink; 
+   padding-left:220px;
+   padding-top:50px;
+   margin-bottom: 0;    /*h1 has margin by default*/
+    margin-top:0;
+}
+
+/*body also has margin by default.*/
+body{
+    margin:0;
+}
+
+div{
+    width:250px;
+    height:200px;
+}
+
+#first{
+    color:white;
+    background-color:#264653;
+    border-width:5px;
+    border-color:gray;
+    border-style:solid;
+}
+#second{
+    background-color:#2a9d8f;
+    border-width:5px;
+    border-color:rgb(53, 51, 51);
+    border-style:dashed;
+    box-sizing:border-box;
+}
+
+/*Provide all in 1 go
+    border : width | style | color*/
+#third{
+    background-color:#e9c46a;
+    border: 4px solid gray;
+
+    /*If we want to modify just the left side*/
+    border-left-style: dotted;
+}
+
+#fourth{
+    background-color: #f4a261;
+    border-radius: 5%   /*Can also use*/
+}
+
+/*Paddings = spacing inside the border
+    padding: all_sides
+    padding: vertical horizontal
+    padding: top right bottom left
+    padding: top horizontal bottom*/
+button{
+    padding: 5px 10px;
+}
+
+/*Margin = spacing outside the border
+ same rule as padding*/
