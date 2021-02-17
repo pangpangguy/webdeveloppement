@@ -1,0 +1,52 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+#container{
+    background-color: #003049;
+    width:90%;
+    height:500px;
+
+    /*center the container*/
+    margin:0 auto;
+    border: 5px solid #003049;
+
+    /*Turn on flexbox property => maintains all elements (in this div)
+    within the container*/
+    display: flex;
+
+    /*elements will be placed from right to left. (left to right is default)*/
+    flex-direction:row-reverse;
+
+    /*Cross-axis => top to bottom. Note that element's size will be changed to
+    fit in the container*/
+    flex-direction: column;
+    flex-direction: column-reverse;
+    
+}
+
+div{
+    width: 200px;
+    height:200px;
+}
+
+#container2{
+    background-color: #2883b4;
+    width:90%;
+    height:500px;
+
+    /*center the container*/
+    margin:0 auto;
+    border: 5px solid #2883b4;
+
+    display: flex;
+    justify-content:center;
+    /*Evenly distribute the elements in the container
+    cf space-around and space-evenly as well*/
+    justify-content: space-between;
+    
+    
+}
