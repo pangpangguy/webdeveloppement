@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmville</title>
+  </head>
+  <body>
+    <h1>Add a new product:</h1>
+    <form action="/products" method="post">
+      <label for="name">Product Name:</label>
+      <input type="text" name="name" />
+      <label for="price">Price:</label>
+      <input type="number" name="price" />
+      <select name="category" id="">
+        <option value="fruit">fruit</option>
+        <option value="vegetable">vegetable</option>
+        <option value="dairy">dairy</option>
+      </select>
+      <button>Submit</button>
+    </form>
+    <a href="/products">Return to products</a>
+  </body>
+</html>
