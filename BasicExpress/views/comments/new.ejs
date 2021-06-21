@@ -1,0 +1,17 @@
+<%- include('../partials/head') %> 
+<%- include('../partials/navbar') %>
+
+<h1>Enter a new comment:</h1>
+<form action="/comments" method="post">
+    <div class="form-group">
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">    
+        <label for ="comment">Comment:</label>
+        <textarea id="comment" name="comment" required rows='10' cols="30"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Comment</button>
+</form>
+
+<%- include('../partials/footer') %>

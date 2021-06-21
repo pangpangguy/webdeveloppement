@@ -1,0 +1,12 @@
+
+<%- include('../partials/head') %> 
+<%- include('../partials/navbar') %>
+<h1>All comments:</h1>
+<% for (let c of comments){ %>
+    <li>"<%= c.comment%>" -- <b><%= c.username%></b>
+        <a href="/comments/<%=c.id%>">View</a>
+        <a href="/comments/<%=c.id%>/edit">Edit</a>
+    </li>
+<% } %>  
+<a href="/new">New</a>
+<%- include('../partials/footer') %>

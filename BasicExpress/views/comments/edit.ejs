@@ -1,0 +1,14 @@
+<%- include('../partials/head') %> 
+<%- include('../partials/navbar') %>
+
+<h1>Edit comment:</h1>
+<form action="/comments/<%= comment.id%>?_method=patch" method="post">
+    <div class="form-group">    
+        <textarea id="comment" name="comment" required rows='10' cols="30">
+            <%=comment.comment%>
+        </textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Comment</button>
+</form>
+
+<%- include('../partials/footer') %>
