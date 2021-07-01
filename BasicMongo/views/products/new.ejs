@@ -7,8 +7,8 @@
     <title>Farmville</title>
   </head>
   <body>
-    <h1>Add a new product:</h1>
-    <form action="/products" method="post">
+    <h1>Add a new product for <%= farm.name %> :</h1>
+    <form action="/farms/<%=farm._id%>/products" method="post">
       <label for="name">Product Name:</label>
       <input type="text" name="name" />
       <label for="price">Price:</label>

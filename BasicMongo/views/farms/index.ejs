@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmville</title>
+  </head>
+  <body>
+    <h1>Farms:</h1>
+    <ul>
+      <% for(let f of farms){ %>
+      <li><a href="/farms/<%=f._id%>"><%=f.name%></a></li>
+      <% } %>
+    </ul>
+    <a href="products/new">Add new product</a>
+    <a href="/products">Show all products</a>
+    <a href="/farms">Show all farms</a>
+  </body>
+</html>

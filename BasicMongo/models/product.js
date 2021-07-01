@@ -15,6 +15,10 @@ const productSchema = new mongoose.Schema({
     enum: ["fruit", "vegetable", "dairy"],
     required: true,
   },
+  farm: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Farm'
+  }
 });
 
 const Product = mongoose.model("Product", productSchema);
