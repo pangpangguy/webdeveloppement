@@ -1,0 +1,40 @@
+<input type="text" (input)="onUpdateServerName($event)" class="form-control" />
+<h3>{{ serverName }}</h3>
+
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
+  Add Server
+</button>
+<!--Square bracket indicates to Angular that we are using property
+binding. (dynamically bind some property and disable the HTML btn )
+Here we are binding the native 'disabled' property to our 'allowNewServer' TypeScrip property-->
+<h3>{{ serverCreationStatus }}</h3>
+
+<!--2 way binding-->
+<!--Triggers on input event and updates the value of serverName-->
+<input type="text" [(ngModel)]="serverName" class="form-control" />
+
+<hr />
+
+<h1>Built in directive:</h1>
+<!--Using built-in directive-->
+<input type="text" [(ngModel)]="serverName" class="form-control" />
+
+<!--if serverCreated is true, display paragraph, else display #noServer-->
+<p *ngIf="serverCreated; else noServer">
+  Server was created, server name is {{ serverName }}
+</p>
+<ng-template #noServer><p>No server was created!</p></ng-template>
+
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
+  Create a new Server
+</button>
+<!--Reusing the component twice-->
+<app-server *ngFor="let server of servers"></app-server>

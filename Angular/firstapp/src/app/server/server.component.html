@@ -1,0 +1,9 @@
+<!--ngStyle => Dynamically change color
+    ngClass => Dynamically add class to an element (key=class, value=condition)-->
+<p
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{ online: serverStatus === 'online' }"
+>
+  Server with ID {{ serverId }} is {{ serverStatus }}
+</p>
+<p>and with function : {{ getServerStatus() }}</p>
