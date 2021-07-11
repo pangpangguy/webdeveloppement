@@ -1,12 +1,9 @@
-<app-header (feature)="onNavigate($event)"></app-header>
+<app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
       <h2>Hello there!</h2>
-      <app-recipes *ngIf="feature === 'recipes'"></app-recipes>
-      <app-shopping-list
-        *ngIf="feature === 'shopping-list'"
-      ></app-shopping-list>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
